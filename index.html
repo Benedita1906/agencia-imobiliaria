@@ -15,51 +15,60 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/animations.css">
-    <script src="scripts/script.js"></script>
 </head>
 
 <body>
 
     <!-- Cabeçalho -->
- <header>
-    <div class="container">
+    <header>
 
-        <div class="logo">
-            Elite Imobiliária
+        <div class="container">
+
+            <nav>
+
+                <a href="index.html" class="logo">
+                    Elite Imobiliária
+                </a>
+
+                <div class="menu-direita">
+
+                    <button class="btn-pesquisa">
+                        🔍
+                    </button>
+
+                    <a href="contacto.html" class="btn btn-contacto">
+                        Contactar
+                    </a>
+
+                </div>
+
+            </nav>
+
         </div>
 
-        <nav>
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#quem-somos">Quem Somos</a></li>
-                <li><a href="#imoveis">Imóveis</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-
-        <a href="#contacto" class="btn-header">Contactar</a>
-
-    </div>
     </header>
 
     <!-- Banner -->
-    <div class="banner-content">
+    <section id="inicio" class="banner">
 
-        <h1>Encontre a casa dos seus sonhos</h1>
+        <div class="banner-content">
 
-        <p>
-            Mais de 10 000 imóveis disponíveis em todo o território português.
-        </p>
+            <h1>Encontre a casa dos seus sonhos</h1>
 
-        <a href="#imoveis" class="btn">
-            Ver Imóveis
-        </a>
+            <p>
+                Mais de 10 000 imóveis disponíveis em todo o território português.
+            </p>
 
-    </div>
+            <a href="#imoveis" class="btn">
+                Ver Imóveis
+            </a>
+
+        </div>
+
+    </section>
 
     <!-- Pesquisa -->
-    <section class="pesquisa">
+    <section id="pesquisa-imoveis" class="pesquisa">
 
         <h2>Encontre o imóvel ideal</h2>
 
@@ -67,7 +76,7 @@
 
             <input
                 type="text"
-                id="cidade"
+                id="pesquisa"
                 placeholder="Cidade, concelho ou freguesia">
 
             <select id="tipo-imovel">
@@ -86,7 +95,7 @@
                 <option>1.000.000 €</option>
             </select>
 
-            <button id="btnPesquisar">
+            <button id="pesquisar">
                 Pesquisar
             </button>
 
@@ -94,17 +103,32 @@
 
     </section>
 
-    <!-- Quem Somos -->
+    <!--
     <section id="quem-somos" class="quem-somos">
 
-        <h2>Quem Somos</h2>
+        <div class="container">
 
-        <p>
-            Somos uma agência imobiliária especializada na compra,
-            venda e arrendamento de imóveis.
-        </p>
+            <h2>Quem Somos</h2>
+
+            <p>
+                A Elite Imobiliária é uma agência especializada na compra,
+                venda e arrendamento de imóveis em todo o território português.
+            </p>
+
+            <p>
+                Trabalhamos com moradias, apartamentos, terrenos e imóveis
+                comerciais, oferecendo um acompanhamento personalizado a cada cliente.
+            </p>
+
+            <p>
+                O nosso objetivo é ajudar cada pessoa a encontrar o imóvel ideal
+                de forma simples, rápida e segura.
+            </p>
+
+        </div>
 
     </section>
+    -->
 
    <!-- IMÓVEIS -->
     <section id="imoveis" class="imoveis">
@@ -119,7 +143,7 @@
 
                 <img src="imagens/casa1.jpg" alt="Moradia Moderna">
 
-                <div class="info">
+                <div class="card-info">
 
                     <h3>Moradia T3 Moderna</h3>
 
@@ -131,8 +155,8 @@
 
                     <p>📐 180 m²</p>
 
-                    <a href="imoveis/moradia-porto.html">
-                        <button>Ver Mais</button>
+                    <a href="imoveis/moradia-porto.html" class="btn">
+                        Ver Mais
                     </a>
                 
                 </div>
@@ -145,7 +169,7 @@
 
                 <img src="imagens/casa2.jpg" alt="Apartamento">
 
-                <div class="info">
+                <div class="card-info">
 
                     <h3>Apartamento T2</h3>
 
@@ -157,8 +181,8 @@
 
                     <p>📐 105 m²</p>
 
-                    <a href="imoveis/apartamento-braga.html">
-                        <button>Ver Mais</button>
+                    <a href="imoveis/apartamento-braga.html" class="btn">
+                        Ver Mais
                     </a>
 
                 </div>
@@ -171,7 +195,7 @@
 
                 <img src="imagens/casa3.jpg" alt="Moradia">
 
-                <div class="info">
+                <div class="card-info">
 
                     <h3>Moradia com Piscina</h3>
 
@@ -183,8 +207,8 @@
 
                     <p>📐 310 m²</p>
 
-                    <a href="imoveis/moradia-faro.html">
-                        <button>Ver Mais</button>
+                    <a href="imoveis/moradia-faro.html" class="btn">
+                        Ver Mais
                     </a>
 
                 </div>
@@ -197,7 +221,7 @@
 
                 <img src="imagens/casa4.jpg" alt="Apartamento">
 
-                <div class="info">
+                <div class="card-info">
 
                     <h3>Apartamento T1</h3>
 
@@ -209,8 +233,8 @@
 
                     <p>📐 70 m²</p>
 
-                    <a href="imoveis/apartamento-lisboa.html">
-                        <button>Ver Mais</button>
+                    <a href="imoveis/apartamento-lisboa.html" class="btn">
+                        Ver Mais
                     </a>
 
                 </div>
@@ -221,7 +245,7 @@
 
     </section> 
 
-    <!-- Serviços -->
+    <!--
     <section id="servicos" class="servicos">
 
         <h2>Os nossos serviços</h2>
@@ -234,8 +258,9 @@
         </ul>
 
     </section>
+    -->
 
-    <!-- Testemunhos -->
+    <!-- 
     <section id="testemunhos" class="testemunhos">
 
         <h2>O que dizem os nossos clientes</h2>
@@ -243,9 +268,10 @@
         <p>"Excelente atendimento e rapidez."</p>
 
     </section>
+    -->
 
-    <!-- Contacto -->
-    <section class="contacto">
+    <!--
+    <section id="contacto" class="contacto">
 
         <h2>Contacto</h2>
 
@@ -257,21 +283,24 @@
 
             <textarea placeholder="Mensagem"></textarea>
 
-            <button>Enviar</button>
+            <a href="#contacto" class="btn">
+                Contactar
+            </a>
 
         </form>
 
     </section>
+    -->
 
     <!-- Rodapé -->
-    <footer>
+        <footer>
 
-        <p>© 2026 Elite Imobiliária</p>
+            <p>© 2026 Elite Imobiliária</p>
 
-    </footer>
+        </footer>
 
-    <script src="scripts/script.js"></script>
+        <script src="scripts/script.js"></script>
 
-</body>
+    </body>
 
 </html>

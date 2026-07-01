@@ -86,3 +86,35 @@ h2{
 html{
     scroll-behavior: smooth;
 }
+
+/* Quem Somos */
+
+.quem-somos{
+
+    padding:80px 20px;
+    text-align:center;
+
+}
+
+.quem-somos .container{
+
+    max-width:900px;
+    margin:auto;
+
+}
+
+.quem-somos h2{
+
+    margin-bottom:30px;
+    font-size:42px;
+
+}
+
+.quem-somos p{
+
+    margin-bottom:20px;
+    line-height:1.8;
+    font-size:18px;
+    color:#555;
+
+}

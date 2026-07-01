@@ -50,3 +50,50 @@ nav a:hover{
 .btn-header:hover{
     background:#1d4ed8;
 }
+.logo{
+
+    text-decoration:none;
+    font-size:30px;
+    font-weight:bold;
+    color:#222;
+
+}
+
+.menu-direita{
+
+    display:flex;
+    align-items:center;
+    gap: 20px;
+
+}
+
+.btn-pesquisa{
+
+    background:none;
+    border:none;
+    font-size:24px;
+    cursor:pointer;
+
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-direita{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.logo{
+    text-decoration: none;
+    color: #222;
+    font-size: 24px;
+    font-weight: bold;
+}
+.logo:hover{
+    color: #222;
+}
+.btn-contacto{
+    margin-left: 70px;
+}

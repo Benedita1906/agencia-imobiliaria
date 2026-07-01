@@ -1,21 +1,18 @@
-const botao = document.getElementById("btnPesquisar");
+const pesquisa = document.getElementById("pesquisa");
+const pesquisarBtn = document.getElementById("pesquisar");
+const cards = document.querySelectorAll(".card");
 
-botao.addEventListener("click", function () {
+pesquisarBtn.addEventListener("click", function () {
 
-    const cidade = document
-        .getElementById("cidade")
-        .value
-        .toLowerCase();
+    const cidade = pesquisa.value.toLowerCase();
 
-    const cards = document.querySelectorAll(".card");
+    cards.forEach(function(card) {
 
-    cards.forEach(function(card){
+        const cidadeCard = card.dataset.cidade.toLowerCase();
 
-        const local = card.dataset.cidade.toLowerCase();
-
-        if(local.includes(cidade) || cidade === ""){
+        if (cidadeCard.includes(cidade) || cidade === "") {
             card.style.display = "block";
-        }else{
+        } else {
             card.style.display = "none";
         }
 
