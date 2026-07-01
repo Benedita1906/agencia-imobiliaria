@@ -19,3 +19,24 @@ pesquisarBtn.addEventListener("click", function () {
     });
 
 });
+
+const btnPesquisa = document.getElementById("abrirPesquisa");
+const caixaPesquisa = document.getElementById("caixaPesquisa");
+
+btnPesquisa.addEventListener("click", function () {
+
+    if (caixaPesquisa.style.width === "250px") {
+
+        caixaPesquisa.style.width = "0";
+        caixaPesquisa.style.opacity = "0";
+
+    } else {
+
+        caixaPesquisa.style.width = "250px";
+        caixaPesquisa.style.opacity = "1";
+
+        caixaPesquisa.focus();
+
+    }
+
+});

@@ -1,0 +1,73 @@
+main{
+
+    max-width:700px;
+    margin:60px auto;
+    padding:20px;
+
+}
+
+main h2{
+
+    text-align:center;
+    font-size:36px;
+    margin-bottom:15px;
+    color:#222;
+
+}
+
+main p{
+
+    text-align:center;
+    margin-bottom:40px;
+    color:#666;
+    line-height:1.6;
+
+}
+
+.form-contacto{
+
+    background:#ffffff;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.10);
+
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+
+}
+
+.form-contacto label{
+
+    font-weight:bold;
+    color:#333;
+
+}
+
+.form-contacto input,
+.form-contacto select,
+.form-contacto textarea{
+
+    width:100%;
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+    box-sizing:border-box;
+
+}
+
+.form-contacto textarea{
+
+    resize:vertical;
+
+}
+
+.form-contacto input:focus,
+.form-contacto select:focus,
+.form-contacto textarea:focus{
+
+    outline:none;
+    border:1px solid #2563eb;
+
+}

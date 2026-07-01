@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/animations.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
@@ -32,9 +34,14 @@
 
                 <div class="menu-direita">
 
-                    <button class="btn-pesquisa">
-                        🔍
+                    <button class="btn-pesquisa" id="abrirPesquisa">
+                        <i class="fas fa-search"></i>
                     </button>
+
+                    <input
+                        type="text"
+                        id="caixaPesquisa"
+                        placeholder="Pesquisar imóveis...">
 
                     <a href="contacto.html" class="btn btn-contacto">
                         Contactar
@@ -295,7 +302,43 @@
     <!-- Rodapé -->
         <footer>
 
-            <p>© 2026 Elite Imobiliária</p>
+            <div class="footer-container">
+
+                <div>
+
+                    <h3>Elite Imobiliária</h3>
+
+                    <p>Ajudamos a encontrar a casa dos seus sonhos.</p>
+
+                </div>
+
+                <div>
+
+                    <h3>Contacto</h3>
+
+                    <p>📍 Porto, Portugal</p>
+
+                    <p>📞 +351 912 345 678</p>
+
+                    <p>📧 contacto@eliteimobiliaria.pt</p>
+
+                </div>
+
+                <div>
+
+                    <h3>Horário</h3>
+
+                    <p>Segunda a Sexta</p>
+
+                    <p>09:00 às 18:00</p>
+
+                </div>
+
+            </div>
+
+            <p class="copyright">
+                © 2026 Elite Imobiliária - Todos os direitos reservados.
+            </p>
 
         </footer>
 
